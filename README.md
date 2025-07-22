@@ -33,7 +33,7 @@ Este proyecto implementa una aplicación web completa que simula la página de d
 
 ```bash
 # Clonar el repositorio
-git clone <repository-url>
+git clone https://github.com/xosebastian/meli-challenge
 cd meli-challenge
 
 # Levantar toda la aplicación
