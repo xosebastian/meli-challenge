@@ -1,0 +1,69 @@
+
+
+services:
+  # Redis Cache
+  redis:
+    image: redis:7.2-alpine
+    container_name: meli-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Backend API
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    container_name: meli-api
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_DATA_REDIS_HOST=redis
+      - SPRING_DATA_REDIS_PORT=6379
+    depends_on:
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/actuator/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    volumes:
+      - ./api/src/main/resources:/app/resources:ro
+
+  # Frontend Web App
+  web:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    container_name: meli-web
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - NEXT_PUBLIC_API_URL=http://meli-api:8080 
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+    volumes:
+      - ./web:/app
+      - /app/node_modules
+      - /app/.next
+
+volumes:
+  redis_data:
+    driver: local
+
+networks:
+  default:
+    name: meli-network

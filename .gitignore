@@ -1,0 +1,77 @@
+# ===== GENERAL =====
+.env
+.env.local
+.env.production
+.env.staging
+*.log
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# ===== JAVA/SPRING BOOT =====
+backend/target/
+backend/*.jar
+backend/*.war
+backend/.mvn/wrapper/maven-wrapper.jar
+backend/.spring-boot-devtools.properties
+
+# ===== NODE.JS/NEXT.JS =====
+web/node_modules/
+web/.next/
+web/out/
+web/build/
+web/dist/
+web/.env
+web/.env.local
+web/.env.production.local
+web/.env.staging.local
+web/npm-debug.log*
+web/yarn-debug.log*
+web/yarn-error.log*
+
+# ===== DOCKER =====
+.docker/
+docker-compose.override.yml
+docker-compose.prod.yml
+docker-compose.staging.yml
+
+# ===== IDEs =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ===== TESTING =====
+coverage/
+.nyc_output/
+junit.xml
+
+# ===== LOGS =====
+logs/
+*.log
+
+# ===== DEPENDENCIES =====
+node_modules/
+.pnp
+.pnp.js
+
+# ===== BUILD ARTIFACTS =====
+build/
+dist/
+target/
+
+# ===== CACHE =====
+.cache/
+.parcel-cache/
+
+# ===== SECURITY =====
+.secrets/
+secrets.txt
+*.pem
+*.key
+
+# ===== MONITORING =====
+.prometheus/
+.grafana/ 

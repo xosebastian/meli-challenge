@@ -1,0 +1,66 @@
+[
+  {
+    "id": "MLA123456",
+    "title": "Monitor Valkyrie Vh2410v2 200hz-144hz G-sync 24 1ms Ips Hdr",
+    "description": "---------------------------------12 Cuotas Sin Interés----------------------------------\n-------------------------------------------------------------------------------------------------\nVuelve Valkyrie a la batalla con la versión actualizada del VH2410V2\nIncrementando su tasa de refresco máxima hasta alcanzar los 200Hz\n-------------------------------------------------------------------------------------------------\n\nMarca: Valkyrie.\nModelo: VH2410V2\nTasa de refresco: 200Hz DisplayPort, 180Hz HDMI 2.0\nTecnologia G-Sync Compatible y FreeSync\n\nBrillo: Max 400cd/m2.\nRatio de contraste: 1100:1.\nCantidad de colores: 1.07B\n\nPanel antireflejo IPS HDR400 / Mas alta tecnologia y el mayor rango\nde colores.\nBorderless/ marco ultra fino.\n\nTamaño en diagonal 24\" (23,8\" pulgadas).\n1920x1080 FHD.\n\nDiseño Ultra ligero.\nPanel de control de sencillo manejo con joystick.\nAngulo de inclinación -5° a 15° (Forerake 5°, Fadeaway 15).\nBase metálica super firme de triple apoyo (3 patas).\nCompatible VESA 75x75\n\nAccesorios: Cable HDMI 2.0, Cable Display port, Fuente de alimentación externa y cable de alimentación.\n\nValkyrie nace de la pasión por el mundo de los videojuegos,\ncon un firme compromiso hacia el consumidor.\nNos esforzamos por ofrecer productos especificamente diseñados para satisfacer las necesidades de los gamers, sin dar vueltas.\nManteniendo gran calidad, tecnología de ultima generación y siendo accesibles para todos.",
+    "price": 318199.26,
+    "currency": "ARS",
+    "stock": 15,
+    "images": [
+      "https://http2.mlstatic.com/D_NQ_NP_668789-MLA82268561301_022025-O.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_954321-MLA81987513446_022025-O.webp"
+    ],
+    "variants": [
+      {"label": "Color", "options": ["Negro", "Blanco"]}
+    ],
+    "paymentOptions": {
+      "methods": ["Tarjeta de crédito", "Transferencia bancaria", "Efectivo"],
+      "installments": "6x $31.666 sin interés"
+    },
+    "delivery": {
+      "type": "express",
+      "estimatedDate": "2024-06-15",
+      "cost": 0
+    },
+    "seller": {
+      "name": "Valkyrie",
+      "rating": 4.8,
+      "reviews": 1024,
+      "reputation": "gold"
+    },
+    "ratings": {
+      "average": 4.5,
+      "count": 235
+    },
+    "features": [
+      {"name": "Tamaño de la pantalla", "value": "24 ''"},
+      {"name": "Tasa de refresco", "value": "200Hz"},
+      {"name": "Tecnología G-Sync Compatible y FreeSync", "value": "200Hz"},
+      {"name": "Brillo", "value": "Max 400cd/m2."},
+      {"name": "Ratio de contraste", "value": "1100:1."},
+      {"name": "Cantidad de colores", "value": "1.07B"},
+      {"name": "Panel antireflejo IPS HDR400", "value": "Mas alta tecnologia y el mayor rango de colores."},
+      {"name": "Borderless/ marco ultra fino.", "value": "Tamaño en diagonal 24\" (23,8\" pulgadas)."},
+      {"name": "1920x1080 FHD.", "value": "Diseño Ultra ligero."}
+    ],
+    "reviews": [
+      {
+        "user": "Juan Pérez",
+        "comment": "Excelente calidad de imagen",
+        "rating": 5
+      },
+      {
+        "user": "Ana Gómez",
+        "comment": "Muy bueno, pero el soporte es bajo",
+        "rating": 4
+      }
+    ],
+    "metadata": {
+      "seoTitle": "Monitor Valkyrie Vh2410v2 200hz-144hz G-sync 24 1ms Ips Hdr",
+      "seoDescription": "Comprá el Monitor Valkyrie Vh2410v2 200hz-144hz G-sync 24 1ms Ips Hdr con pantalla Super AMOLED, 128 GB y 15 unidades disponibles. ¡Aprovechá esta oferta!",
+      "category": "Electrónicos",
+      "brand": "Valkyrie",
+      "availability": "in_stock"
+    }
+  }
+]

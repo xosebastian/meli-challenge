@@ -1,0 +1,50 @@
+services:
+  # Redis for cache
+  redis:
+    image: redis:7.2-alpine
+    container_name: meli-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - meli-network
+
+  # Backend API
+  backend:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: meli-backend
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_DATA_REDIS_HOST=redis
+      - SPRING_DATA_REDIS_PORT=6379
+      - JAVA_OPTS=-XX:+UseContainerSupport -XX:MaxRAMPercentage=75.0
+    depends_on:
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/products/MLA123456"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    restart: unless-stopped
+    networks:
+      - meli-network
+
+volumes:
+  redis_data:
+    driver: local
+
+networks:
+  meli-network:
+    driver: bridge
