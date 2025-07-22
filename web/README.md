@@ -294,13 +294,7 @@ rm -rf .next
 npm run dev
 ```
 
-## 📈 Métricas y Monitoreo
-
-### Core Web Vitals Objetivo
-
-- **LCP**: < 2.5s (Largest Contentful Paint)
-- **FID**: < 100ms (First Input Delay)
-- **CLS**: < 0.1 (Cumulative Layout Shift)
+## 📈 Monitoreo
 
 ### Herramientas de Análisis
 

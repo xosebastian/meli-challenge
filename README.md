@@ -151,7 +151,7 @@ spring.data.redis.port=6379
 
 - **Guía de ejecución**: Ver `run.md` para instrucciones detalladas
 - **API Documentation**: http://localhost:8080/swagger-ui.html
-- **Backend docs**: Ver `api/run.md`
+- **Backend docs**: Ver `api/README.md`
 - **Frontend docs**: Ver `web/README.md`
 
 ## 🛠️ Comandos Útiles
@@ -210,19 +210,3 @@ cd web && rm -rf node_modules package-lock.json && npm install
 # Backend
 cd api && ./mvnw clean install
 ```
-
-## 🎯 Próximos Pasos
-
-1. **Explorar la aplicación** en http://localhost:3000/products/MLA123456
-2. **Revisar el código** en las carpetas `api/` y `web/`
-3. **Ejecutar tests** para verificar funcionamiento
-4. **Personalizar** estilos y funcionalidades
-5. **Agregar más productos** en `api/src/main/resources/products.json`
-
-## 📄 Licencia
-
-Este proyecto fue desarrollado como parte del challenge técnico de MercadoLibre.
-
----
-
-**¡Disfruta explorando la aplicación! 🚀**
